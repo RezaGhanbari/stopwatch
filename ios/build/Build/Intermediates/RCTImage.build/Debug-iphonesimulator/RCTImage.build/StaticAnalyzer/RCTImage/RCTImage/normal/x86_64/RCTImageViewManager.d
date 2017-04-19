@@ -1,0 +1,29 @@
+dependencies: \
+  /Users/reza/WebstormProjects/stopwatch/node_modules/react-native/Libraries/Image/RCTImageViewManager.m \
+  /Users/reza/WebstormProjects/stopwatch/node_modules/react-native/Libraries/Image/RCTImageViewManager.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTViewManager.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventDispatcher.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/UIView+React.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
+  /Users/reza/WebstormProjects/stopwatch/node_modules/react-native/Libraries/Image/RCTImageLoader.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTResizeMode.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTURLRequestHandler.h \
+  /Users/reza/WebstormProjects/stopwatch/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTURLRequestDelegate.h \
+  /Users/reza/WebstormProjects/stopwatch/node_modules/react-native/Libraries/Image/RCTImageView.h
