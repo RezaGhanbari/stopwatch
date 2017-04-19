@@ -5,64 +5,83 @@ const formatTime = require('minutes-seconds-milliseconds');
 const StopWatch = React.createClass({
     getInitialState(){
         return {
-            timeElapsed: null
+            timeElapsed: null,
+            running: false,
+            startTime: null
         }
     },
     render() {
         return <View style={styles.container}>
-            <View style={[styles.header, this.border('yellow')]}>
-                <View style={[this.border('red'), styles.timerWrapper]}>
+            <View style={[styles.header]}>
+                <View style={[styles.timerWrapper]}>
                     <Text style={styles.timer}>
                         {formatTime(this.state.timeElapsed)}
                     </Text>
                 </View>
-                <View style={[this.border('green'), styles.buttonWrapper]}>
+                <View style={[styles.buttonWrapper]}>
                     {this.startStopButton()}
                     {this.lapButton()}
                 </View>
             </View>
 
-            <View style={[styles.footer, this.border('blue')]}>
+            <View style={[styles.footer]}>
                 <Text>
-                    Blue box
+                    list of laps
                 </Text>
             </View>
         </View>
 
     },
     startStopButton() {
+
+        const style = this.state.running ? styles.stopButton : styles.startButton;
+
         return <TouchableHighlight
             underlayColor='gray'
-            style={styles.button}
+            style={[styles.button, style]}
             onPress={this.handleStartPress}>
             <Text>
-                Start
+                {this.state.running ? 'Stop' : 'Start'}
             </Text>
         </TouchableHighlight>
     },
 
     handleStartPress() {
-        const startTime = new Date();
+        if (this.state.running) {
+            clearInterval(this.interval);
+            this.setState({running: false});
+            return
+        }
 
-        setInterval(() => {
+        const startTime = new Date();
+        this.setState({
+            startTime: new Date()
+        });
+
+        this.interval = setInterval(() => {
             this.setState({
-                timeElapsed: new Date() - startTime
+                timeElapsed: new Date() - this.state.startTime,
+                running: true
             });
         }, 30);
     },
 
     lapButton() {
-        return <View style={styles.button}>
+        return <TouchableHighlight
+            style={styles.button}
+            underlayColor='gray'
+            onPress={this.handleLapPress}>
             <Text>
                 Lap
             </Text>
-        </View>
+        </TouchableHighlight>
     },
-    border(color){
-        return {
-            borderColor: color,
-            borderWidth: 4
-        }
+    handleLapPress(){
+        const lap = this.state.timeElapsed;
+        this.setState({
+            startTime: new Date()
+        });
+
     }
 });
 
@@ -98,6 +117,12 @@ const styles = StyleSheet.create({
         borderRadius: 50,
         justifyContent: 'center',
         alignItems: 'center'
+    },
+    startButton: {
+        borderColor: '#00CC00'
+    },
+    stopButton: {
+        borderColor: '#CC0000'
     }
 });
 
